@@ -77,4 +77,5 @@ li, ol, blockquote, code, del, ins, small, big, em {
     display: block;
     height: 138px;
     width: 360px;
+    white-space: nowrap;
   }
