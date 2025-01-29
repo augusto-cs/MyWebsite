@@ -2,26 +2,24 @@
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 10px; /* Padding reduzido para pequenas telas */
+        padding: 0 10px; /* Reduz padding em telas pequenas */
     }
     
     .container {
-        padding: 0 10px; /* Maior controle de espaçamento nas laterais */
+        padding: 0 10px; /* Espaçamento adicional para o container */
     }
-
-    h1 {
-        font-size: 24px; /* Ajuste de tamanho da fonte */
-    }
-
-    p {
-        font-size: 18px; /* Ajuste do tamanho do texto */
+    
+    h1, p {
+        font-size: 16px; /* Ajuste do tamanho da fonte */
     }
 }
 
 
+
+
+
  
 body {
-    body {
         background-color: #939BF5;
         margin: 0;
         padding: 0; /* Eliminei o padding global para evitar overflow */
