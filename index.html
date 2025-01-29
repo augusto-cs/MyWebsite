@@ -95,34 +95,149 @@
             print('O número é ímpar')
         </code>
     </pre>
+    <h1>Citações</h1>
+    <p>
+        Para inserir citações em uma página, usamos as tags <q> para citações curtas e <blockquote> para citações longas.
+        
+        Exemplo de citação curta:</p>
+        <p><q>O computador é um burro muito rápido.</q>
+        </p>
+        <p>Exemplo de citação longa:</p>
+    <p><blockquote>Estou morto, mas vivo.</blockquote>
+    </p>
+    <h1>abreviações</h1>
+    <p>
+        Podemos usar a tag <abbr> para definir abreviações e explicar seu significado com o atributo title.
+        
+        Exemplo:</p>
+    <p><p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, Estou adorando!</p>
+</p>
+<h1>Texto Invertido</h1>
+<p>A tag <bdo> é usada para alterar a direção do texto, o que pode ser útil para idiomas que escrevem da direita para a esquerda (RTL).
 
-    <p><strong>Citações:</strong> Para inserir citações em uma página, usamos as tags <q> para citações curtas e <blockquote> para citações longas. Exemplo de citação curta:</p>
-    <q>O computador é um burro muito rápido.</q>
+    Exemplo:</p>
+    <p><bdo dir="rtl">Estou aprendendo a usar coisas em HTML.</bdo>
+    </p>
+    <h1>Trabalhando com Listas</h1>
+    <p>Listas Ordenadas
+        As listas ordenadas usam a tag <ol>, e a tag <li> é usada para cada item da lista. Você pode escolher o tipo de numeração com o atributo type, e também pode iniciar a lista em um número ou letra específica com o atributo start.
+        
+        Exemplo de lista ordenada:</p>
+    <p><ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+      </ol>
+      </p>
+      <p>Exemplo de lista ordenada com start:</p>
+      <p><ol type="A" start="7">
+        <li>Comer banana</li>
+        <li>Ir para a academia</li>
+        <li>Arrumar a mala</li>
+      </ol>
+      </p>
+      <p>Observação: Ao usar letras, por exemplo, se você colocar start="3", a numeração começará pela letra "C".</p>
+    <h1>Listas Não Ordenadas</h1>
+    <p>As listas não ordenadas são feitas com a tag <ul>. Ao contrário das listas ordenadas, não há numeração, mas os itens podem ter diferentes estilos de marcador, como circle, disc e square.
 
-    <p>Exemplo de citação longa:</p>
-    <blockquote>Estou morto, mas vivo.</blockquote>
+        Exemplo:</p>
+    <p><ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+      </ul>
+      </p>
+    <p>Você também pode usar o * para gerar repetições rápidas de código. Por exemplo, ul*7 vai gerar uma lista não ordenada com sete itens.</p>
+    <h1>Minhas Linguagens Favoritas</h1>
+    <p>Aqui estão as linguagens que eu mais gosto, organizadas em listas ordenadas e não ordenadas:</p>
+    <p><ol>
+        <li>Antigas
+          <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+          </ol>
+        </li>
+        <li>Novas
+          <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+          </ol>
+        </li>
+     </ol>
+     </p>
+     <h1>Lista de Jogos e Consoles</h1>
+     <p>Aqui está uma lista com jogos e consoles, utilizando listas ordenadas e não ordenadas:
 
-    <p><strong>Abreviações:</strong> Podemos usar a tag <abbr> para definir abreviações e explicar seu significado com o atributo title. Exemplo:</p>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!</p>
+        html
+        Copiar
+        Editar
+        </p>
+    <p><ol>
+        <li>NES
+           <ul>
+             <li>Mario Bros
+               <ul type="square">
+                 <li>Mario Bros 3</li>
+                 <li>Mario: Lost Levels</li>
+               </ul>
+             </li>
+             <li>Ninja Gaiden</li>
+           </ul>
+        </li>
+        <li>SNES
+           <ul>
+             <li>Mario</li>
+             <li>Donkey Kong</li>
+           </ul>
+        </li>
+        <li>PlayStation
+           <ul>
+             <li>Final Fantasy</li>
+             <li>Castlevania</li>
+           </ul>
+        </li>
+      </ol>
+      </p>
+     <h1>Lista de Definições</h1>
+     <p>A tag <dl> é usada para criar uma lista de definições. Cada termo é inserido com a tag <dt>, e sua descrição é colocada na tag <dd>.
 
-    <p><strong>Texto Invertido:</strong> A tag <bdo> é usada para alterar a direção do texto, o que pode ser útil para idiomas que escrevem da direita para a esquerda (RTL). Exemplo:</p>
-    <bdo dir="rtl">Texto invertido</bdo>
+        Exemplo:</p>
+    <p><dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação de interatividade de um site.</dd>
+      </dl>
+      </p>
+      <H1>Usando Links Internos e Links Externos</H1>
 
-    <p><strong>Listas:</strong> As listas podem ser feitas usando as tags <ul> para listas não ordenadas e <ol> para listas ordenadas. Aqui está um exemplo:</p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+    Para criar links para sites externos, usamos a tag <a> e os atributos href, target="_blank", e rel="external". O atributo target="_blank" faz com que o link seja aberto em uma nova aba, enquanto rel="external" indica que o link é para um site externo.
+    
+    Exemplo de link para um repositório no GitHub:</p>
+    <p>Você pode acessar o meu <a href="https://github.com/augusto-cs" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Exemplo de link para um canal no YouTube:</p>
+    <p><p>Você também pode acessar o meu <a href="https://www.youtube.com/@augustocszz" target="_blank" rel="external">canal no YouTube</a></p>
+</p>
+<p>Abrindo Links Internos em seu Próprio Site
+    Para abrir uma página interna do seu próprio site, basta usar o link relativo. Isso evita que a página seja aberta em uma nova aba. O link interno é feito com o atributo href, sem o target="_blank".
+    
+    Exemplo de link para outra página do seu site:</p>
+    <p><p>Na continuação da aula 10, que seria sobre links, aprendi a abrir com links outra página do meu site. Por exemplo, <a href="pagina01.html">clique aqui</a></p>
+</p>
+<p>Exemplo de link para uma página dentro de uma subpasta (como a pasta "noticias"):</p>
+<p><p>Também temos nossa página de notícias, <a href="noticias/pag003.html">clique aqui</a></p>
+</p>
 
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-
-    <p><strong>Links:</strong> Para adicionar links em uma página, usamos a tag <a href="">. Exemplo:</p>
-    <a href="https://www.google.com">Clique aqui para acessar o Google</a>
+    
 
 </body>
 </html>
