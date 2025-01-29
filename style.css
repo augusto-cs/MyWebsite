@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* Reset básico de CSS */
 *,
 *::before,
 *::after {
@@ -9,33 +8,26 @@
     padding: 0;
 }
 
-/* Meta tag de viewport */
-/* Adicione esta meta tag no <head> do seu HTML:
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> */
-
 body {
     background-color: #939BF5;
-    overflow-x: hidden; /* Esconde qualquer transbordamento horizontal */
+    overflow-x: hidden; 
     width: 100%;
     max-width: 100%;
-    font-size: 16px; /* Define um tamanho de fonte base */
+    font-size: 16px; 
 }
 
-/* Estilo para a container */
 .container {
     width: 100%;
-    max-width: 1200px; /* Defina um valor máximo para evitar excesso de largura */
+    max-width: 1200px; 
     padding: 0 15px;
     margin: 0 auto;
 }
 
-/* Ajuste para textos e títulos */
 h1, h2, h3, p {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-/* Título h1 */
 h1 {
     font-family: Arial, sans-serif;
     color: #4A8CF0;
@@ -43,7 +35,6 @@ h1 {
     line-height: 1.2;
 }
 
-/* Título h2 */
 h2 {
     text-align: justify;
     margin-top: 40px;
@@ -51,7 +42,6 @@ h2 {
     color: #4A57F0;
 }
 
-/* Título h3 */
 h3 {
     text-align: center;
     margin-top: 40px;
@@ -59,82 +49,61 @@ h3 {
     color: #4AC1F0;
 }
 
-/* Parágrafos */
 p {
     text-align: justify;
-    font-size: 1rem; /* Usando unidades relativas */
+    font-size: 1rem; 
     color: #724AF0;
 }
 
-/* Ajustando os links e outros elementos */
 li, ol, blockquote, code, del, ins, small, big, em {
     color: #724AF0;
 }
 
-/* Galeria de imagens (se houver) */
 #galleryscroller {
-    overflow: hidden; /* Corrigido para evitar overflow */
-    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    overflow: hidden; 
+    overflow-x: auto; 
     display: block;
     height: 138px;
-    width: 100%; /* Ajusta a largura para 100% do container */
-    max-width: 360px; /* Define uma largura máxima */
+    width: 100%; 
+    max-width: 360px; 
     white-space: nowrap;
-    margin: 0 auto; /* Centraliza a galeria */
+    margin: 0 auto; 
 }
 
-/* Responsividade */
 @media screen and (max-width: 600px) {
     body {
-        font-size: 14px; /* Reduz o tamanho da fonte base para dispositivos móveis */
+        font-size: 14px; 
     }
 
     .container {
-        padding: 0 10px; /* Adiciona um pouco de espaçamento nas laterais */
+        padding: 0 10px; 
     }
 
     h1, h2, h3, p {
-        font-size: 1rem; /* Mantém o tamanho relativo */
+        font-size: 1rem; 
     }
 
     #galleryscroller {
-        overflow-x: auto; /* Permite rolagem horizontal apenas se necessário */
+        overflow-x: auto; 
         display: block;
-        width: 100%; /* Ocupa 100% da largura do container */
-        max-width: 100%; /* Não ultrapassa a largura da tela */
-        white-space: nowrap; /* Mantém os itens na mesma linha */
-        margin: 0 auto; /* Centraliza a galeria */
+        width: 100%; 
+        max-width: 100%; 
+        white-space: nowrap; 
+        margin: 0 auto; 
     }
 }
 
-/* Evitar zoom excessivo nos dispositivos móveis */
 html {
-    font-size: 16px; /* Define uma base de fonte para os cálculos de rem/em */
+    font-size: 16px; 
 }
+
 html, body {
-    overflow-x: hidden; /* Impede a rolagem horizontal */
+    overflow-x: hidden; 
     width: 100%;
     max-width: 100%;
 }
 
 img, div, section {
-    max-width: 100%; /* Garante que não ultrapassem a largura da tela */
-    height: auto; /* Mantém a proporção das imagens */
-}
-
-html {
-    font-size: 16px; /* Tamanho de fonte base */
-}
-
-body {
-    font-size: 1rem; /* Usa o tamanho de fonte base */
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
-    }
-    h1, h2, h3, p {
-        font-size: 1rem; /* Mantém o tamanho relativo */
-    }
+    max-width: 100%;
+    height: auto; 
 }
