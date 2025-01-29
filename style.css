@@ -14,46 +14,40 @@
     }
 }
 
+/* Reset básico de CSS */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #939BF5;
-    margin: 0;
-    padding: 0; /* Eliminei o padding global para evitar overflow */
-    max-width: 100%; /* Garante que a largura não ultrapasse 100% */
     overflow-x: hidden; /* Esconde qualquer transbordamento horizontal */
-    box-sizing: border-box; /* Inclui padding e border no cálculo de largura e altura */
 }
 
 .container {
-    max-width: 100%; /* Garante que o conteúdo não ultrapasse a tela */
-    width: 100%; /* Garante que a largura ocupe toda a tela */
-    padding: 0 15px; /* Adiciona espaçamento nas laterais */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 100%;
+    width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 h1 {
     font-family: Arial, sans-serif;
     color: #4A8CF0;
-    margin: 0; /* Adicionei espaço no lado esquerdo */
-    padding: 0;
-    text-align: center; /* Melhor para títulos */
+    text-align: center;
     line-height: 1.2;
-    letter-spacing: normal; /* Remove espaçamento estranho */
-    word-spacing: normal; /* Remove espaçamento estranho */
-    white-space: normal; /* Corrige o comportamento do texto */
-    overflow-wrap: break-word; /* Adicionei hifenização para prevenir overflow */
 }
 
 h2 {
-    word-wrap: break-word; /* Garante que o texto se quebre na tela */
-    overflow-wrap: break-word; /* Outra forma de quebra de linha */
-    margin: 0;
-    padding: 0;
     text-align: justify;
     margin-top: 40px;
     font-family: Arial, sans-serif;
@@ -61,10 +55,6 @@ h2 {
 }
 
 h3 {
-    word-wrap: break-word; /* Garante que o texto se quebre na tela */
-    overflow-wrap: break-word; /* Outra forma de quebra de linha */
-    margin: 0;
-    padding: 0;
     text-align: center;
     margin-top: 40px;
     font-family: 'Courier New', Courier, monospace;
@@ -72,10 +62,6 @@ h3 {
 }
 
 p {
-    word-wrap: break-word; /* Garante que o texto se quebre na tela */
-    overflow-wrap: break-word; /* Outra forma de quebra de linha */
-    margin: 0;
-    padding: 0;
     text-align: justify;
     font-size: 20px;
     color: #724AF0;
@@ -84,3 +70,4 @@ p {
 li, ol, blockquote, code, del, ins, small, big, em {
     color: #724AF0;
 }
+
