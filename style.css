@@ -1,0 +1,31 @@
+@charset "UTF-8";
+ 
+body {
+    background-color: #939BF5;
+}
+
+h1 {
+    text-align: justify;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4A8CF0;
+}
+
+h2 {
+    text-align: justify;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4A57F0
+}
+h3 {
+    text-align: justify;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4AC1F0;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: #724AF0;
+}    

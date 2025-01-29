@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="robson.ico" type="image/x-icon">
+    <title>O que aprendi no Curso do Curso em Video?</title>
+</head>
+<body>
+    <h1>Primeiramente, Visual Studio Code tem que ser configurado corretamente.</h1>
+    <hr>
+    <h1>Parágrafos e quebras de linha</h1>
+    <p>Escreva um parágrafo de qualquer forma que preferir. Basta colocá-lo entre as tags <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>.</p>
+    <p>Para pular uma linha, basta usar a tag <code>&lt;br&gt;</code>.</p>
+
+    <h1>Símbolos especiais e emojis</h1>
+    <p>Alguns símbolos especiais:
+        &copy; &reg; &trade; &euro; &pound; &yen; &cent; &delta; &Delta; &uparrow; &uarr; &darr;
+    </p>
+    <h3>Emojis</h3>
+    <p>Vamos adicionar alguns emoji:
+        &#x1f600; &#x1f601; &#x1f602;
+        <br>
+        Os emojis são adicionados facilmente, pegando o código deles no site Emoji Pedia e colando aqui.
+    </p>
+
+    <h1>Edição de imagens no "GIMP" e colocando imagens no site</h1>
+    <p>Para colocar uma imagem no site, basta usar a tag &lt;img&gt;. Por exemplo, para colocar a imagem imagem.jpg, basta usar o seguinte código: <code>&lt;img src="" alt=""&gt;</code></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/html300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/html700.png" type="image/png">
+        <img src="imagens/html1000.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Ícone do Site</h1>
+    <p>Aprendi a criar um ícone para o site (favicon). Para testar, usei a imagem de um amigo meu. O processo pode ser um pouco chato no início, mas, seguindo um tutorial, dá para aprender direitinho.
+    Aqui, estou apenas explicando meu passo a passo de forma geral. Mas, se quiser realmente aprender, recomendo buscar um professor ou um bom curso.
+    Eu aprendi tudo até agora pelo Curso em Vídeo, com o professor Gustavo Guanabara, que explica de forma excelente. Se quiser conferir, aqui está o link do canal: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">Curso em Vídeo</a></p>
+
+    <h1>Semântica do VSC</h1>
+    <p>No exercício 7, aprendi sobre a semântica no Visual Studio Code. O foco agora está mais no significado do código, o que ajuda a melhorar a organização e a legibilidade. O HTML5 deixou para trás muitas práticas do HTML4. Por exemplo, o código antigo para definir a cor de fundo da página, como <code>&lt;body bgcolor="red"&gt;</code>, não é mais utilizado. Agora, a maneira correta é usar CSS, como:</p>
+    <p><code>&lt;body style="background-color: white;"&gt;</code></p>
+    <p>Além de ser mais bonito, o HTML5 é mais semântico, o que torna o código mais organizado. Existem muitos outros exemplos de códigos antigos que não são mais recomendados, mas, como não sei explicar todos com detalhes, vou dar mais um exemplo de HTML4:</p>
+    <p><code>&lt;body&gt;</code></p>
+    <p><code>&lt;marquee behavior="scroll" direction="right"&gt;Teste de marquee&lt;/marquee&gt;</code></p>
+    <p>Esse código, que faz o texto se mover pela página, está obsoleto e, futuramente, pode deixar de funcionar corretamente. O Google pode até desvalorizar páginas que utilizem esse tipo de código.</p>
+
+    <h1>Principais Formatações</h1>
+    <p><strong>Negrito:</strong> Para colocar o texto em negrito, utilizamos a tag <strong>, como neste exemplo:</p>
+    <strong>aqui estará em negrito</strong>
+    <p>Usando o <strong>, ele abre um espaço onde você pode colocar o texto ou a palavra que deseja que apareça em negrito.</p>
+
+    <p><strong>Itálico:</strong> Para colocar o texto em itálico, usamos a tag <em>, como neste exemplo:</p>
+    <em>aqui estará escrito em itálico</em>
+
+    <p><strong>Marcador (Highlight):</strong> Para destacar uma parte do texto, usamos a tag <mark>. Aqui está um exemplo:</p>
+    <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligendi, ipsam nostrum velit soluta debitis! Fugit commodi iusto nesciunt earum explicabo nulla nobis obcaecati, dolorum eius, delectus maxime assumenda facilis.</mark>
+
+    <p>Além disso, é possível mudar a cor de fundo do marcador usando a tag style para definir o background-color. Exemplo:</p>
+    <mark style="background-color: blue;">adadwdadawdadasd</mark>
+
+    <h2>Textos pequenos e grandes</h2>
+    <p><strong>Letras pequenas:</strong> Para criar texto com letras menores, usamos a tag <small>, como no exemplo abaixo:</p>
+    <small>Texto pequeno</small>
+
+    <p><strong>Letras grandes:</strong> Para criar texto com letras maiores, utilizamos a tag <big>, como no exemplo:</p>
+    <big>Texto grande</big>
+
+    <p><strong>Observação:</strong> A tag <big> não é mais recomendada para uso, pois com o CSS, há formas mais adequadas de controlar o tamanho da fonte.</p>
+
+    <p><strong>Texto Deletado:</strong> Para marcar um texto como excluído, usamos a tag <del>. Isso indica que o texto deve ser lido, mas não deve ser considerado no conteúdo. Exemplo:</p>
+    <del>um texto como excluído</del>
+
+    <p><strong>Texto Inserido:</strong> Para indicar que um texto foi inserido, usamos a tag <ins>. Isso dá ênfase ao texto inserido. Exemplo:</p>
+    <ins>um texto inserido</ins>
+
+    <p><strong>Texto Sobrescrito:</strong> Para inserir texto sobrescrito (como em fórmulas matemáticas), usamos a tag <sup>. Exemplo:</p>
+    <p>x<sup>20</sup> + 3</p>
+
+    <p><strong>Texto Subscrito:</strong> Para inserir texto subscrito (como em fórmulas químicas), usamos a tag <sub>. Exemplo:</p>
+    <p>H<sub>2</sub></p>
+
+    <h1>Outras formatações</h1>
+    <p><strong>Código-fonte:</strong> Para mostrar código em uma página HTML, usamos as tags <code> e <pre>. O <code> é usado para envolver o código e indicar que é algo executável. Já o <pre> preserva a formatação original do código. Exemplo:</p>
+    <code>document.getElementById('teste')</code>
+
+    <p>Aqui está um exemplo de código em Python que calcula se um número é par ou ímpar:</p>
+    <pre>
+        <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print('O número é par')
+        else:
+            print('O número é ímpar')
+        </code>
+    </pre>
+
+    <p><strong>Citações:</strong> Para inserir citações em uma página, usamos as tags <q> para citações curtas e <blockquote> para citações longas. Exemplo de citação curta:</p>
+    <q>O computador é um burro muito rápido.</q>
+
+    <p>Exemplo de citação longa:</p>
+    <blockquote>Estou morto, mas vivo.</blockquote>
+
+    <p><strong>Abreviações:</strong> Podemos usar a tag <abbr> para definir abreviações e explicar seu significado com o atributo title. Exemplo:</p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!</p>
+
+    <p><strong>Texto Invertido:</strong> A tag <bdo> é usada para alterar a direção do texto, o que pode ser útil para idiomas que escrevem da direita para a esquerda (RTL). Exemplo:</p>
+    <bdo dir="rtl">Texto invertido</bdo>
+
+    <p><strong>Listas:</strong> As listas podem ser feitas usando as tags <ul> para listas não ordenadas e <ol> para listas ordenadas. Aqui está um exemplo:</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <p><strong>Links:</strong> Para adicionar links em uma página, usamos a tag <a href="">. Exemplo:</p>
+    <a href="https://www.google.com">Clique aqui para acessar o Google</a>
+
+</body>
+</html>
