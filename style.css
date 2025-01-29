@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 600px) {
-    body, h1, h2, h3, p {
-        font-size: 16px; /* Ajuste do tamanho da fonte */
-    }
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-}
-
-
-
 /* Reset básico de CSS */
 *,
 *::before,
@@ -21,23 +9,29 @@
     padding: 0;
 }
 
+/* Meta tag de viewport */
 body {
     background-color: #939BF5;
     overflow-x: hidden; /* Esconde qualquer transbordamento horizontal */
+    width: 100%;
+    max-width: 100%;
 }
 
+/* Estilo para a container */
 .container {
-    max-width: 100%;
-    width: auto;
+    width: 100%;
+    max-width: 1200px; /* Defina um valor máximo para evitar excesso de largura */
     padding: 0 15px;
     margin: 0 auto;
 }
 
+/* Ajuste para textos e títulos */
 h1, h2, h3, p {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
+/* Título h1 */
 h1 {
     font-family: Arial, sans-serif;
     color: #4A8CF0;
@@ -45,6 +39,7 @@ h1 {
     line-height: 1.2;
 }
 
+/* Título h2 */
 h2 {
     text-align: justify;
     margin-top: 40px;
@@ -52,6 +47,7 @@ h2 {
     color: #4A57F0;
 }
 
+/* Título h3 */
 h3 {
     text-align: center;
     margin-top: 40px;
@@ -59,16 +55,19 @@ h3 {
     color: #4AC1F0;
 }
 
+/* Parágrafos */
 p {
     text-align: justify;
     font-size: 20px;
     color: #724AF0;
 }
 
+/* Ajustando os links e outros elementos */
 li, ol, blockquote, code, del, ins, small, big, em {
     color: #724AF0;
 }
 
+/* Galeria de imagens (se houver) */
 #galleryscroller {
     overflow: none;
     overflow-x: auto;
@@ -76,4 +75,28 @@ li, ol, blockquote, code, del, ins, small, big, em {
     height: 138px;
     width: 360px;
     white-space: nowrap;
-  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    body, h1, h2, h3, p {
+        font-size: 18px; /* Ajuste do tamanho da fonte para dispositivos móveis */
+    }
+
+    .container {
+        padding: 0 10px; /* Adiciona um pouco de espaçamento nas laterais */
+    }
+
+    h1, h2, h3, p {
+        font-size: 1rem; /* Define tamanho relativo */
+    }
+}
+
+/* Evitar zoom excessivo nos dispositivos móveis */
+html {
+    font-size: 16px; /* Define uma base de fonte para os cálculos de rem/em */
+}
+
+meta[name="viewport"] {
+    content: "width=device-width, initial-scale=1.0"; /* Meta tag no HTML */
+}
