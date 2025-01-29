@@ -1,4 +1,17 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    body {
+        padding: 5%;
+    }
+}
+
  
 body {
     background-color: #939BF5;
