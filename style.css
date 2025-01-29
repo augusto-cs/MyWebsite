@@ -39,7 +39,7 @@ body {
 h1 {
     font-family: Arial, sans-serif;
     color: #4A8CF0;
-    margin: 0; /* Adiciona espaço no lado esquerdo */
+    margin: 0; /* Adicionei espaço no lado esquerdo */
     padding: 0;
     text-align: center; /* Melhor para títulos */
     line-height: 1.2;
@@ -55,7 +55,7 @@ h2 {
     margin: 0;
     padding: 0;
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: Arial, sans-serif;
     color: #4A57F0;
 }
@@ -66,7 +66,7 @@ h3 {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: 'Courier New', Courier, monospace;
     color: #4AC1F0;
 }
