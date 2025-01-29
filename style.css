@@ -71,3 +71,10 @@ li, ol, blockquote, code, del, ins, small, big, em {
     color: #724AF0;
 }
 
+#galleryscroller {
+    overflow: none;
+    overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+    display: block;
+    height: 138px;
+    width: 360px; /* Largura fixa para o contêiner */
+}
