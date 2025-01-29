@@ -1,18 +1,16 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 600px) {
-    body {
-        padding: 0 10px; /* Reduz padding em telas pequenas */
-    }
-
-    .container {
-        padding: 0 10px; /* Espaçamento adicional para o container */
-    }
-
-    h1, p {
+    body, h1, h2, h3, p {
         font-size: 16px; /* Ajuste do tamanho da fonte */
     }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
+
+
 
 /* Reset básico de CSS */
 *,
