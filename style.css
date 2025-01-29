@@ -73,8 +73,8 @@ li, ol, blockquote, code, del, ins, small, big, em {
 
 #galleryscroller {
     overflow: none;
-    overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+    overflow-x: auto;
     display: block;
     height: 138px;
-    width: 360px; /* Largura fixa para o contêiner */
-}
+    width: 360px;
+  }
