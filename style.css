@@ -10,11 +10,15 @@
 }
 
 /* Meta tag de viewport */
+/* Adicione esta meta tag no <head> do seu HTML:
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> */
+
 body {
     background-color: #939BF5;
     overflow-x: hidden; /* Esconde qualquer transbordamento horizontal */
     width: 100%;
     max-width: 100%;
+    font-size: 16px; /* Define um tamanho de fonte base */
 }
 
 /* Estilo para a container */
@@ -58,7 +62,7 @@ h3 {
 /* Parágrafos */
 p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 1rem; /* Usando unidades relativas */
     color: #724AF0;
 }
 
@@ -69,18 +73,20 @@ li, ol, blockquote, code, del, ins, small, big, em {
 
 /* Galeria de imagens (se houver) */
 #galleryscroller {
-    overflow: none;
-    overflow-x: auto;
+    overflow: hidden; /* Corrigido para evitar overflow */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
     display: block;
     height: 138px;
-    width: 360px;
+    width: 100%; /* Ajusta a largura para 100% do container */
+    max-width: 360px; /* Define uma largura máxima */
     white-space: nowrap;
+    margin: 0 auto; /* Centraliza a galeria */
 }
 
 /* Responsividade */
 @media screen and (max-width: 600px) {
-    body, h1, h2, h3, p {
-        font-size: 18px; /* Ajuste do tamanho da fonte para dispositivos móveis */
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte base para dispositivos móveis */
     }
 
     .container {
@@ -88,15 +94,16 @@ li, ol, blockquote, code, del, ins, small, big, em {
     }
 
     h1, h2, h3, p {
-        font-size: 1rem; /* Define tamanho relativo */
+        font-size: 1rem; /* Mantém o tamanho relativo */
+    }
+
+    #galleryscroller {
+        width: 100%; /* Ajusta a largura para dispositivos móveis */
+        max-width: 100%; /* Remove a largura máxima */
     }
 }
 
 /* Evitar zoom excessivo nos dispositivos móveis */
 html {
     font-size: 16px; /* Define uma base de fonte para os cálculos de rem/em */
-}
-
-meta[name="viewport"] {
-    content: "width=device-width, initial-scale=1.0"; /* Meta tag no HTML */
 }
