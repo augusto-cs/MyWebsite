@@ -2,26 +2,33 @@
  
 body {
     background-color: #939BF5;
-    margin: 0%;
-    padding: 0%;
-   max-width: 100%;
+    margin: 0;
+    padding: 10px; /* Reduzindo para um valor fixo */
+    max-width: 100%;
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: justify;
-    margin-top: 50px;
-        font-family: Arial, sans-serif;  
-    color: #4A8CF0;
-    margin: 0px;
-padding: 0px;
-line-height: 1.1;
-letter-spacing: 0px
-word-spacing: 0px;
-white-space: 0px;
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+
+h1 {
+    font-family: Arial, sans-serif;  
+    color: #4A8CF0;
+    margin: 20px 0 50px 20px; /* Adiciona espaço no lado esquerdo */
+    padding: 0; 
+    text-align: center; /* Melhor para títulos */
+    line-height: 1.2;
+    letter-spacing: normal; /* Remove espaçamento estranho */
+    word-spacing: normal; /* Remove espaçamento estranho */
+    white-space: normal; /* Corrige o comportamento do texto */
+}
+
 
 h2 {
     text-align: justify;
