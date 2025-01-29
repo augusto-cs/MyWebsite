@@ -98,12 +98,43 @@ li, ol, blockquote, code, del, ins, small, big, em {
     }
 
     #galleryscroller {
-        width: 100%; /* Ajusta a largura para dispositivos móveis */
-        max-width: 100%; /* Remove a largura máxima */
+        overflow-x: auto; /* Permite rolagem horizontal apenas se necessário */
+        display: block;
+        width: 100%; /* Ocupa 100% da largura do container */
+        max-width: 100%; /* Não ultrapassa a largura da tela */
+        white-space: nowrap; /* Mantém os itens na mesma linha */
+        margin: 0 auto; /* Centraliza a galeria */
     }
 }
 
 /* Evitar zoom excessivo nos dispositivos móveis */
 html {
     font-size: 16px; /* Define uma base de fonte para os cálculos de rem/em */
+}
+html, body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    width: 100%;
+    max-width: 100%;
+}
+
+img, div, section {
+    max-width: 100%; /* Garante que não ultrapassem a largura da tela */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+html {
+    font-size: 16px; /* Tamanho de fonte base */
+}
+
+body {
+    font-size: 1rem; /* Usa o tamanho de fonte base */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+    h1, h2, h3, p {
+        font-size: 1rem; /* Mantém o tamanho relativo */
+    }
 }
