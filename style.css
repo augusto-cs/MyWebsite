@@ -14,6 +14,7 @@ body {
     width: 100%;
     max-width: 100%;
     font-size: 16px; 
+    padding: 0 15px; /* Adicionando espaçamento à esquerda e direita */
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
 h1, h2, h3, p {
     word-wrap: break-word;
     overflow-wrap: break-word;
+    word-break: break-word; /* Evita o corte inadequado das palavras */
 }
 
 h1 {
@@ -73,6 +75,7 @@ li, ol, blockquote, code, del, ins, small, big, em {
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px; 
+        padding: 0 10px; /* Ajuste o padding no mobile para reduzir o espaço */
     }
 
     .container {
